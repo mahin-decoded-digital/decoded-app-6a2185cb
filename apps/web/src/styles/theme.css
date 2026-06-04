@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
+/**
+ * theme.css — pre-written by the design pipeline (server-controlled).
+ *
+ * Tier: style-glassmorphism
+ * Mode: dark (default)
+ * Primary source: preset
+ * Accent source:  preset
+ * Tier origin:    style-preset
+ *
+ * This file overrides EVERY semantic shadcn variable so the brand hue
+ * carries through cards, borders, muted surfaces, focus rings, and
+ * sidebars — not just the primary CTA. These overrides win via an
+ * UNLAYERED :root block (index.css declares its tokens in @layer base,
+ * and unlayered styles beat layered ones) — do NOT wrap this in @layer.
+ *
+ * Format: shadcn space-separated HSL ("H S% L%"), read via
+ * `hsl(var(--primary))` in Tailwind utilities.
+ */
+
+:root {
+  --background: 206.8 12.6% 9%;
+  --foreground: 206.8 18% 96%;
+  --card: 206.8 13.8% 12%;
+  --card-foreground: 206.8 18% 96%;
+  --popover: 206.8 13.8% 12%;
+  --popover-foreground: 206.8 18% 96%;
+  --primary: 206.8 62.8% 51.4%;
+  --primary-foreground: 206.8 25% 9%;
+  --secondary: 345.8 25.3% 16%;
+  --secondary-foreground: 345.8 30% 92%;
+  --muted: 206.8 12.6% 18%;
+  --muted-foreground: 206.8 16% 65%;
+  --accent: 345.8 21.1% 18%;
+  --accent-foreground: 345.8 30% 92%;
+  --border: 206.8 13.8% 22%;
+  --input: 206.8 13.8% 22%;
+  --ring: 206.8 62.8% 51.4%;
+  --brand: 206.8 62.8% 51.4%;
+  --brand-foreground: 206.8 25% 9%;
+  --brand-accent: 345.8 84.3% 67.8%;
+  --brand-accent-foreground: 345.8 25% 9%;
+  --chart-1: 206.8 70% 62%;
+  --chart-2: 345.8 70% 62%;
+  --chart-3: 350.8 70% 62%;
+  --chart-4: 62.8 70% 62%;
+  --chart-5: 134.8 70% 62%;
+}
+
+.light {
+  --background: 206.8 17.6% 97%;
+  --foreground: 206.8 25% 8%;
+  --card: 0 0% 100%;
+  --card-foreground: 206.8 25% 8%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 206.8 25% 8%;
+  --primary: 206.8 62.8% 44.4%;
+  --primary-foreground: 206.8 15% 99%;
+  --secondary: 345.8 37.9% 95%;
+  --secondary-foreground: 345.8 30% 22%;
+  --muted: 206.8 15.7% 94%;
+  --muted-foreground: 206.8 14% 42%;
+  --accent: 345.8 25.3% 92%;
+  --accent-foreground: 345.8 35% 22%;
+  --border: 206.8 15.7% 89%;
+  --input: 206.8 15.7% 89%;
+  --ring: 206.8 62.8% 44.4%;
+  --brand: 206.8 62.8% 44.4%;
+  --brand-foreground: 206.8 15% 99%;
+  --brand-accent: 345.8 84.3% 48.8%;
+  --brand-accent-foreground: 345.8 15% 99%;
+  --chart-1: 206.8 68% 52%;
+  --chart-2: 345.8 68% 52%;
+  --chart-3: 350.8 68% 52%;
+  --chart-4: 62.8 68% 52%;
+  --chart-5: 134.8 68% 52%;
+}
+
+:root {
+  --font-display: 'Sora', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+}
+body { font-family: var(--font-body); }
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-display); }
