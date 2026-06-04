@@ -1,4 +1,5 @@
 import { NeonCard } from '@/components/NeonCard';
+import { NameCRUD } from '@/components/NameCRUD';
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: '2rem 1rem',
+        padding: '2rem 1rem 4rem',
         position: 'relative',
         overflow: 'hidden',
         background: 'hsl(var(--background))',
@@ -67,7 +68,7 @@ export default function Home() {
         }}
       />
 
-      {/* Card container */}
+      {/* Card stack */}
       <div
         style={{
           position: 'relative',
@@ -75,10 +76,13 @@ export default function Home() {
           width: '100%',
           maxWidth: '480px',
           display: 'flex',
-          justifyContent: 'center',
+          flexDirection: 'column',
+          alignItems: 'center',
+          gap: '1.5rem',
         }}
       >
         <NeonCard />
+        <NameCRUD />
       </div>
 
       {/* Footer watermark */}
